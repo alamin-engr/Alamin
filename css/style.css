@@ -1,0 +1,890 @@
+/* ===============================
+    GLOBAL CSS START
+===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: var(--headingFont);
+    color: var(--colorBlack);
+}
+
+h2 {
+    font-size: 40px;
+}
+h4 {
+    font-size: 15px;
+    color: var(--colorSecondary);
+    text-transform: uppercase;
+}
+p,
+span {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    font-family: var(--paraFont);
+    color: var(--paraColor);
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100% !important; 
+    height: 100% !important; 
+    object-fit: cover !important; 
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    outline: none;
+    resize: none;
+    border: 1px solid #E4E7E9;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a6a6ac;
+}
+
+button {
+    border: none;
+    background: var(--colorSecondary);
+}
+
+:root {
+    --colorPrimary: #ffffff;
+    --colorSecondary: #878787;
+    --colorBlack: #222222;
+    --paraColor: #666666;
+    --colorred:#f26957;
+    --headingFont: 'Inter', sans-serif;
+    --paraFont: 'Open Sans', sans-serif;
+}
+
+
+.common_btn {
+    color: var(--colorWhite);
+    background: var(--colorPrimary);
+    font-family: var(--paraFont);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 32px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.common_btn i {
+    margin-left: 5px;
+}
+
+.common_btn:hover {
+    background: var(--colorSecondary);
+}
+ 
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+/*===============================
+    GLOBAL CSS END
+===============================*/
+
+
+
+/*===============================
+    MENU START
+===============================*/
+
+.main_menu {
+    width: 100%;
+    height: 85px;
+    background: #080505 ;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.main_menu .navbar-brand {
+    margin: 0;
+    padding: 0;
+    width: 125px;
+}
+
+.main_menu .navbar-nav {
+    gap: 25px;
+    line-height: 85px;
+}
+
+.main_menu .navbar-nav .nav-item {
+    position: relative;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link {
+    color: var(--colorPrimary);
+    font-family: var(--headingFont);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+
+.main_menu .navbar-nav .nav-item .nav-link i {
+    font-size: 13px;
+}
+
+.main_menu .navbar-nav .nav-item:hover .nav-link,
+.main_menu .navbar-nav .nav-item .nav-link.active {
+    color: var(--colorred);
+}
+
+.main_menu .right_menu {
+    gap: 15px;
+}
+
+?
+.main_menu .right_menu li{
+    position: relative;
+    padding-left: 25px;
+    margin-left: 25px;
+}
+.main_menu .right_menu li::after {
+    position: absolute;
+    content: "";
+    background: var(--colorBlack);
+    height: 16px;
+    width: 1px;
+    left: 0px;
+    top: 15px;
+}
+
+.main_menu .right_menu li a {
+    color: var();
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--headingFont);
+    border: 1px solid var(--colorPrimary);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.main_menu .right_menu li a:hover {
+    background: var(--colorSecondary);
+    color: var(--colorPrimary);
+}
+.main_menu .right_menu li a {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+
+
+/*===============================
+    MENU END
+===============================*/
+.banner_area {}
+
+.hero {}
+
+
+.banner {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding-top:250px;
+    padding-bottom: 250px;
+}
+
+.banner_text {
+    text-align: center;
+    margin-top: 185px;
+    margin-bottom: 30px;
+}
+.banner_text h4 {
+    color: var(--colorPrimary);
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.banner_text h1 {
+    color: var(--colorPrimary);
+    font-size: 92px;
+}
+.banner_text h1 span {
+    display: block;
+    font-size: 30px;
+    color: var(--colorPrimary);
+}
+.banner_text a {
+    margin-top: 50px;
+    color: var(--colorPrimary);
+    border: 1px solid var(--colorSecondary);
+    padding: 15px 30px;
+    background: var(--colorred);
+}
+.banner_text a:hover {
+    color: var(--colorred);
+    background: var(--colorPrimary);
+}
+
+.hero {
+    position: relative;
+}
+
+.pre-arrow.slick-arrow {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 5%;
+}
+.pre-arrow.slick-arrow::after {
+    background: var(--colorPrimary);
+    width: 3px;
+    height: 30px;
+    top: 5px;
+    position: absolute;
+    content: "";
+    left: -10px;
+}
+.next-arrow.slick-arrow {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 5%;
+}
+.next-arrow.slick-arrow::after {
+    background: var(--colorPrimary);
+    width: 3px;
+    height: 30px;
+    top: 5px;
+    position: absolute;
+    content: "";
+    right: -10px;
+}
+
+.pre-arrow span {
+    font-size: 26px;
+    color: #fff;
+ 
+}
+
+.next-arrow span {
+    font-size: 26px;
+    color: #fff;
+  
+}
+
+
+
+/*===============================
+    BANNER END
+===============================*/
+
+
+
+
+
+/* =========================
+     introducing START
+========================== */
+
+.introducing_area {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.introducing_heading {
+    text-align: center;
+}
+
+.introducing_heading h4 {
+    color: var(--colorSecondary);
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+.introducing_heading h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.introducing_heading p {
+    line-height: 27px;
+    width: 75%;
+    margin-left: 170px;
+    margin-bottom: 40px;
+}
+
+.introducing_features {}
+
+.introducing_image {
+}
+
+.introducing_image img {
+    width: 100%!important;
+}
+
+.introducing_info {
+}
+
+.introducing_info h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.introducing_info p {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.introducing_info a {
+    color: var(--colorBlack);
+}
+
+.introducing_info a span i {
+    margin-left: 10px;
+    color: var(--colorBlack);
+}
+
+
+
+/* =========================
+      introducing END
+==========================  */
+
+
+
+/* =======================
+     Services START
+========================= */
+.service_area {
+    background: #f6f6f6;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.service_heading {
+    text-align: center;
+}
+
+.service_heading h4 {
+    color: var(--colorSecondary);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.service_heading h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.service_heading p {
+    margin-bottom: 60px;
+}
+
+.service_features {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;    
+    margin-bottom: 20px;
+}
+
+.service_features_info {
+    padding: 60px 40px;
+}
+
+.service_features_info span i {
+    font-size: 32px;
+    color: var(--colorred);
+}
+
+.service_features_info h4 {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.service_features_info p {
+    font-size: 15px;
+}
+
+/* =========================
+       Services END
+========================== */
+    
+
+
+
+/* =========================
+      Our project START
+========================== */
+.project_area {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.project_text {}
+
+.project_text  h4 {
+    color: var(--colorSecondary);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project_text ul li h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.portfolio_menu {
+    gap: 15px;
+}
+.portfolio_menu li{}
+.portfolio_menu li a {
+    color: var(--colorSecondary);
+}
+
+.portfolio_menu li a:hover {
+    color: var(--colorred);
+}
+
+
+.portfolio_item img {
+    width: 100%!important;
+}
+
+
+
+/* =========================
+    Our project   END
+========================== */
+
+/* =========================
+     Counting Area Start
+========================== */
+
+
+
+
+.counting_area {
+    background: var(--colorBlack);
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.counting_box {
+    text-align: center;
+    position: relative;
+}
+
+.counting_image img {
+    margin-bottom: 20px;
+}
+
+.counting_text span::after {
+    background: var(--colorPrimary);
+    width: 45px;
+    height: 2px;
+    position: absolute;
+    content: "";
+    bottom: 30px;
+    left: 128px;
+}
+
+.counting_text span {
+    color: var(--colorPrimary);
+    font-size: 32px;
+}
+
+.counting_text p {
+    color: var(--colorPrimary);
+    margin-top: 10px;
+}
+
+
+/* =========================
+     Counting Area End
+========================== */
+
+
+
+/* =========================
+       Team Start
+==========================  */
+.team_area {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.team_heading {
+    text-align: center;
+}
+
+.team_heading h4 {}
+
+.team_heading h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.team_heading p {
+    margin-bottom: 40px;
+}
+
+.team_box {
+    position: relative;
+    text-align: center;
+}
+
+.team_image {
+}
+
+.team_image img {
+    width: 100%!important;
+
+}
+.team_text {
+    width: 100%;
+    height: 87%;
+    background:#2f2f2f;
+    transition: all linear .3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-items: center;
+    text-align: center;
+    padding-top: 60%;
+    padding-right: 20px;
+    padding-left: 20px;
+    opacity: 0;
+}
+.team_text:hover{
+    opacity: .8;
+}
+
+.team_text ul {
+    justify-content: center;
+    gap: 10px;
+}
+
+.team_text ul li {
+    text-align: center;
+}
+
+
+
+.team_text ul li p {
+   color: var(--colorPrimary);
+   font-size: 15px;
+   margin-bottom: 20px;
+}
+
+
+.team_text ul li a {
+}
+
+.team_text ul li a i {
+    color: var(--colorPrimary);
+    font-size: 26px;
+}
+
+.team_info h3{
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.team_info h5 {
+    font-size: 15px;
+    margin-top: 15px;
+} 
+/* =========================
+        Team End
+==========================  */
+
+
+
+
+/* =========================
+    Design Start
+========================== */
+.design_area {
+    background: #f6f6f6;
+}
+
+.design_image {}
+
+.design_image img {
+    width: 100%!important;
+}
+.design_text {
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.design_text h4 {}
+
+.design_text h2 {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.design_text p {
+    margin-bottom: 35px;
+}
+
+.design_text a {
+    margin-top: 50px;
+    color: var(--colorPrimary);
+    border: 1px solid var(--colorSecondary);
+    padding: 15px 30px;
+    background: var(--colorred);
+}
+.design_text a:hover {
+    color: var(--colorred);
+    background: var(--colorPrimary);
+}
+/* =========================
+    Design END
+========================== */
+
+/*===============================
+          Brand   START
+===============================*/
+
+
+.brand_area {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.brand_slider {}
+
+.brand_image {}
+.brand_image img {
+    width: 100px!important;
+}
+ 
+/*===============================
+      Brand END
+===============================*/
+/* =========================
+   Blog  Start
+========================== */
+.blog_area {
+    background: #f6f6f6 ;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.blog_heading {
+    text-align: center;
+}
+
+.blog_heading h4 {}
+.blog_heading h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.blog_heading p {
+    margin-bottom: 30px;
+}
+
+.blog_features {}
+
+.blog_image img {}
+
+.blog_info {
+    padding: 40px 30px 40px 30px;
+    background: var(--colorPrimary);
+}
+
+.blog_info h3 {
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.blog_info ul {
+    margin-bottom: 30px;
+
+}
+.blog_info ul li {
+    gap: 10px;
+}
+.blog_info ul li span {}
+.blog_info ul li .blog_span {
+    color: var(--colorred);
+}
+.blog_info p {
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+.blog_info a {
+    color: var(--colorBlack);
+}
+
+.blog_info p {
+    position: relative;
+}
+
+.blog_info p::after {
+    position: absolute;
+    content: "";
+    bottom: -28%;
+    background: var(--paraColor);
+    height: 1px;
+    left: 0;
+    width: 100%;
+}
+
+.blog_info a span i {
+    margin-left: 10px;
+}
+/* =========================
+    Blog  END
+========================== */
+
+
+
+/* =========================
+      Footer Top  Start
+========================== */
+.footer_top {
+    background: var(--colorBlack);
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.footer_left {}
+.footer_image img {
+    width: 120px!important;
+    height: 35px!important;
+}
+.footer_left p {
+    margin-top: 30px;
+    width: 441px;
+    margin-bottom: 30px;
+    line-height: 35px;
+}
+.footer_left ul {
+    gap: 10px;
+}
+.footer_left ul li {
+    color: #353333;
+}
+.footer_left ul li i {
+    color: var(--colorPrimary);
+    font-size: 22px;
+}
+.footer_mid {}
+.mid_text {}
+.mid_text h4 {
+    margin-bottom: 45px;
+}
+.mid_text p {
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.mid_text span {
+    /* margin-bottom: 70px; */
+}
+.footer_right {}
+.rightt_text {}
+.right_text h4 {}
+.right_text p {
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.right_text ul {
+}
+.right_text li {}
+.right_text ul li input {
+    background: #3f3f3f;
+    border: none;
+}
+.right_text ul li .submit-button {
+    font-size: 22px;
+    width: 48px;
+    height: 48px;
+    background: #3f3f3f;
+    border-left: 1px solid var(--colorPrimary);
+    color: var(--colorPrimary);
+}
+
+.footer_lastpart {
+    background: #2e2e2e;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.lastpart_left {}
+
+.lastpart_left p {}
+
+.lastpart_right {}
+
+.lastpart_right ul {}
+.lastpart_right ul li {}
+
+.lastpart_right ul li a {}
+
+
+
+
+/* =========================
+    Footer Top END
+========================== */
+
+
